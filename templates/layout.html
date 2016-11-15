@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>David Herron Portfolio Site</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/nav.css">
+</head>
+<body>
+
+    <h1>This is always here</h1>
+    <ul>
+        <li><a href="{{ url_for ('main') }}">Home</a></li>
+        <li><a href="{{ url_for ('view_portfolio') }}">Portfolio</a></li>
+        <li><a href="{{ url_for ('contact_me') }}">Contact</a></li>
+    </ul>
+    {% block content %}{% endblock %}
+
+</body>
+</html>
