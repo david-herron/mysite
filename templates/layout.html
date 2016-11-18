@@ -2,17 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>David Herron Portfolio Site</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/nav.css">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/lightbox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/thumbnail-gallery.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+
+
 </head>
 <body>
 
-    <h1>This is always here, Now I've made some changes!</h1>
-    <ul>
-        <li><a href="{{ url_for ('main') }}">Home</a></li>
-        <li><a href="{{ url_for ('view_portfolio') }}">Portfolio</a></li>
-        <li><a href="{{ url_for ('contact_me') }}">Contact</a></li>
-    </ul>
+    <header class='main_header'>
+        <h1 class='name'><span class='front_name'>D</span><span class="a_v_name">A</span>VID<span class='middle_name'> </span>HERRON</h1>
+        <h2 class='title'>Web Developer & Graphic Designer</h2>
+    </header>
+
+        <ul>
+            <li><a href="{{ url_for ('main') }}">Home</a></li>
+            <li><a href="{{ url_for ('view_portfolio') }}">Portfolio</a></li>
+            <li><a href="{{ url_for ('contact_me') }}">Contact</a></li>
+        </ul>
+
     {% block content %}{% endblock %}
 
 </body>
