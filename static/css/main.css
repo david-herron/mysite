@@ -1,113 +1,77 @@
-/*
-#480000
-#D84830
-#F09048
-#F0A860
-#F0C060
-*/
+@font-face {
+    font-family: 'merriweather_sansbold';
+    src: url('../fonts/merriweathersans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweather_sansbold_italic';
+    src: url('../fonts/merriweathersans-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweather_sansextrabold';
+    src: url('../fonts/merriweathersans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweather_sansXBdIt';
+    src: url('../fonts/merriweathersans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweather_sansitalic';
+    src: url('../fonts/merriweathersans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweather_sansbook';
+    src: url('../fonts/merriweathersans-light-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweather_sansbookitalic';
+    src: url('../fonts/merriweathersans-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweather_sansregular';
+    src: url('../fonts/merriweathersans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-@font-face {
-    font-family:Pigiarniq_regular;
-    src: url(../fonts/regular.ttf) format('truetype');
-}
-@font-face {
-    font-family:Pigiarniq_bold;
-    src: url(../fonts/bold.ttf) format('truetype');
-}
-@font-face {
-    font-family:Pigiarniq_italic;
-    src: url(../fonts/italic.ttf) format('truetype');
-}
-@font-face {
-    font-family:Pigiarniq_light;
-    src: url(../fonts/light.ttf) format('truetype');
-}
-@font-face {
-    font-family:Pigiarniq_heavy;
-    src: url(../fonts/heavy.ttf) format('truetype');
 }
 
 body {
-    background-color: white;
+    font-family: 'merriweather_sansregular';
 }
-
-.main_header {
-    background-color: #D84830;
-    height:7.5em;
-}
-
-h1 {
-    font-family: Pigiarniq_heavy;
-    color: #D84830;
-}
-
-h2, p{
-    font-family: Pigiarniq_regular;
-    color: #480000;
-}
-
 
 .name {
-    font-family: Pigiarniq_bold;
-    text-shadow: 0px 1.5px 1.5px #F0A860;
-    color: white;
-    font-size:3em;
-    letter-spacing: -2px;
-    margin-bottom: -5px;
-    padding-top:.25em;
+    font-family: 'merriweather_sansextrabold';
 }
-.front_name {
-    letter-spacing:-5px;
-}
-.middle_name {
-    letter-spacing:-15px;
-}
-.a_v_name {
-    letter-spacing: -8px;
-}
-
 .title {
-    font-family: Pigiarniq_italic;
-    color:#F0A860;
-    margin-top:0px;
-    font-size:larger;
+    font-family: 'merriweather_sansXBdIt';
 }
 
-.name, .title {
-    padding-left:3%;
-}
-
-/*
-
-NAVIGATION CSS
-
-*/
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-left:2%;
-    overflow: hidden;
-    background-color: #480000;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    font-family: Pigiarniq_bold;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #380000;
+/* Message flashing */
+.flash {
+    background-color: #FBB0B0;
+    padding: 10px;
+    width: 400px;
 }
 
 

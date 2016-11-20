@@ -14,22 +14,29 @@
     <link rel="stylesheet" type="text/css" href="../static/css/thumbnail-gallery.css">
     <link rel="stylesheet" type="text/css" href="../static/css/main.css">
 
-
 </head>
 <body>
 
-    <header class='main_header'>
-        <h1 class='name'><span class='front_name'>D</span><span class="a_v_name">A</span>VID<span class='middle_name'> </span>HERRON</h1>
-        <h2 class='title'>Web Developer & Graphic Designer</h2>
-    </header>
+    <div class="container">
 
-        <ul>
-            <li><a href="{{ url_for ('main') }}">Home</a></li>
-            <li><a href="{{ url_for ('view_portfolio') }}">Portfolio</a></li>
-            <li><a href="{{ url_for ('contact_me') }}">Contact</a></li>
-        </ul>
+        <header class="jumbotron">
+            <h1 class="name">DAVID HERRON</h1>
+            <h2 class="title">Web Developer & Graphic Designer</h2>
+        </header>
 
-    {% block content %}{% endblock %}
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url_for ('main') }}">Home</a></li>
+                    <li><a href="{{ url_for ('view_portfolio') }}">Portfolio</a></li>
+                    <li><a href="{{ url_for ('contact_me') }}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        {% block content %}{% endblock %}
+
+    </div>
 
 </body>
 </html>

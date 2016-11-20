@@ -1,5 +1,40 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h1>This is where you'll be able to reach me.</h1>
+
+    <h1>Contact Form:</h1>
+
+    <form class="form" action="{{ url_for('contact_me') }}" method=post>
+
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {% for message in form.name.errors %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+            {{ form.name.label }}
+            {{ form.name }}
+        </div >
+            {% for message in form.email.errors %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+            {{ form.email.label }}
+            {{ form.email }}
+        <div class="form-group">
+            {% for message in form.subject.errors %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+            {{ form.subject.label }}
+            {{ form.subject }}
+        </div>
+            {% for message in form.message.errors %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+            {{ form.message.label }}
+            {{ form.message }}
+        <div class="form-group">
+            {{ form.submit }}
+        </div>
+
+    </form>
+
 {% endblock %}
